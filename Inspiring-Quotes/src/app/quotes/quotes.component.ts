@@ -11,6 +11,12 @@ export class QuotesComponent implements OnInit {
     new Quotes('Sirwani', 'Steve Jobs','"Be a yardstick of quality. Some people aren’t used to an environment where excellence is expected."')
     
   ];
+  // addNewQuote(Quotes){
+    // let goalLength = this.quotes.length;
+    // Quotes.id = goalLength+1;
+    // this.quotes.completeDate = new Date(goal.completeDate)
+    // this.quotes.push(this.Quotes))
+  // }
   constructor() { }
 
   ngOnInit(): void {

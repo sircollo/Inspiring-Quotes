@@ -1,7 +1,7 @@
 <div class="">
   <h5>Have an inspiring quote? Post here</h5>
 <form #quotesForm="ngForm">
-  <div class="form-group">
+  <div class="form-group" (ngSubmit)="submitQuote()">
     <label for="name">Your name:</label>
     <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.name" #name='ngModel' name="name"placeholder="your name">
     <div [hidden]="name.valid || name.pristine" class="alert alert-danger">

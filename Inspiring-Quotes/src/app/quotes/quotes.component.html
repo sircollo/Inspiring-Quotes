@@ -1,3 +1,4 @@
+<!-- <app-quotes-form ></app-quotes-form> -->
 <section id="quotes">
 <div *ngFor="let Quotes of quotes" class="card">
   <div class="card-header bg-dark text-light">
@@ -6,11 +7,11 @@
   <div class="card-body">
     <p class="card-text">
     <app-quotes-details [quotes]='Quotes'></app-quotes-details></p>
-    <!-- <p class="card-text">{{Quotes.quoteSaid}}</p> -->
-    <!-- <h6 class="card-title">-{{Quotes.author}}</h6> -->
-    
+  
     <a href="#" class="btn btn-dark">View</a>
-    <!-- <p class="card-text">{{Quotes.quoteSaid}}</p> -->
+  </div>
+  <div class="card-footer text-muted card-pipe">
+    2 days ago
   </div>
 </div>
 </section>
