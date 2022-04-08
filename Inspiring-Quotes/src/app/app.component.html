@@ -34,7 +34,18 @@
   <h2>{{heading}}</h2>
   <hr>
 </div>
-<app-quotes></app-quotes>
+<div class="container">
+  <div class="row">
+    <!-- Quotes form -->
+    <div class="col-md-4">
+      <app-quotes-form></app-quotes-form>
+    </div>
+     <!--Quotes  -->
+     <div class="col-md-8">
+      <app-quotes></app-quotes>
+    </div>
+  </div>
 
+</div>
 
 <router-outlet></router-outlet>
