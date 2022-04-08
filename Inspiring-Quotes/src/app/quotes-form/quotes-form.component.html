@@ -7,15 +7,15 @@
   </div>
    <div class="form-group">
     <label for="author">Author:</label>
-    <input type="text" required class="form-control" id="author" placeholder="author name">
-  </div>
+    <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author"placeholder="author name">
+  </div>  
   <div class="form-group">
     <label for="date">Date:</label>
     <input type="date" required class="form-control" id="date" placeholder="">
   </div>
   <div class="form-group">
     <label for="quote">Quote:</label>
-    <textarea class="form-control" required id="quote" rows="3" placeholder="Write your quote..."></textarea>
+    <textarea class="form-control" required id="quoteSaid" rows="3" [(ngModel)]="newQuote.quoteSaid" name="quoteSaid"placeholder="Write your quote..."></textarea>
   </div>
   <button>Post Quote</button>
 </form>
