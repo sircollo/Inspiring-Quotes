@@ -8,6 +8,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppComponent {
   title = 'Inspiring-Quotes';
+  heading= 'Quotes'
  
   constructor() {
     
