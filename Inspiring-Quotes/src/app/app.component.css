@@ -37,3 +37,8 @@ a:hover{
   width: 18px;
   margin-left: 4px;
 }
+/* slide */
+.carousel-image{
+  height: 90vh;
+  width: 100%;
+}
