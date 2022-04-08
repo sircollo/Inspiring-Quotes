@@ -1,0 +1,39 @@
+a:hover{
+  color: green;
+}
+.navbar{
+  padding: 0%;
+  letter-spacing: 1px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  
+}
+.nav-item{
+  margin-right: 40px;
+}
+.navbar-brand{
+  font-family: 'Dancing Script';
+  font-size: 2.5rem;
+}
+.navar-toggler{
+  border: none;
+  padding: 10px 6px;
+  outline: none;
+}
+.navbar-toggler span{
+  display: flex;
+  width: 18px;
+  height: 2px;
+  margin-left: 4px;
+  background-color: white;
+
+}
+.navbar-toggler span + span{
+  margin-top: 4px;
+  width: 18px;
+  margin-left: 4px;
+}
+.navbar-toggler span + span + span{
+  width: 18px;
+  margin-left: 4px;
+}
