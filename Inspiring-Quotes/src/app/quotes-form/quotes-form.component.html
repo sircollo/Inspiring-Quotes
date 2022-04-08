@@ -3,11 +3,15 @@
 <form #quotesForm="ngForm">
   <div class="form-group">
     <label for="name">Your name:</label>
-    <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.name" name="name"placeholder="your name">
+    <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.name" #name='ngModel' name="name"placeholder="your name">
+    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+    <p>Enter your name</p></div>
   </div>
    <div class="form-group">
     <label for="author">Author:</label>
-    <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author"placeholder="author name">
+    <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" #author='ngModel' name="author"placeholder="author name">
+    <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+    <p>Enter author name</p></div>
   </div>  
   <div class="form-group">
     <label for="date">Date:</label>
@@ -15,7 +19,9 @@
   </div>
   <div class="form-group">
     <label for="quote">Quote:</label>
-    <textarea class="form-control" required id="quoteSaid" rows="3" [(ngModel)]="newQuote.quoteSaid" name="quoteSaid"placeholder="Write your quote..."></textarea>
+    <textarea class="form-control" required id="quoteSaid" rows="3" [(ngModel)]="newQuote.quoteSaid" #quoteSaid='ngModel' name="quoteSaid"placeholder="Write your quote..."></textarea>
+    <div [hidden]="quoteSaid.valid || quoteSaid.pristine" class="alert alert-danger">
+    <p>Enter an inspiring quote</p></div>
   </div>
   <button>Post Quote</button>
 </form>
