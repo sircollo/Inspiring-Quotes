@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './slider/slider.component';
-import { QuotesComponent } from './quotes/quotes.component'
+import { QuotesComponent } from './quotes/quotes.component';
+import { QuotesFormComponent } from './quotes-form/quotes-form.component'
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
-    QuotesComponent
+    QuotesComponent,
+    QuotesFormComponent
   ],
   imports: [
     BrowserModule,
