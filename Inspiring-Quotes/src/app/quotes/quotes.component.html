@@ -1,13 +1,15 @@
 <section id="quotes">
-<div *ngFor="let Quotes of quote" class="card">
+<div *ngFor="let Quotes of quotes" class="card">
   <div class="card-header bg-dark text-light">
     Posted by {{Quotes.name}}
   </div>
   <div class="card-body">
-    <p class="card-text">{{Quotes.quoteSaid}}</p>
-    <h6 class="card-title">-{{Quotes.author}}</h6>
+    <p class="card-text">
+    <app-quotes-details [quotes]='Quotes'></app-quotes-details></p>
+    <!-- <p class="card-text">{{Quotes.quoteSaid}}</p> -->
+    <!-- <h6 class="card-title">-{{Quotes.author}}</h6> -->
     
-    <a href="#" class="btn btn-dark">Delete</a>
+    <a href="#" class="btn btn-dark">View</a>
     <!-- <p class="card-text">{{Quotes.quoteSaid}}</p> -->
   </div>
 </div>
