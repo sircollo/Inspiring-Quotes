@@ -1,3 +1,4 @@
+<div class="container">
 <!-- navigation bar -->
 <header class="header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,5 +25,19 @@
   </nav>
 </header>
 <!-- end of navbar -->
+  
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let image of images">
+      <div class="wrapper">
+        <img [src]="image.src" alt="Random first slide"  class="carousel-image" >
+      </div>
+      <div class="carousel-caption">
+        <h3>{{ image.title }}</h3>        
+      </div>
+    </ng-template>
+  </ngb-carousel>
+      
+  </div>
+<!-- end of sliding quotes -->
 
 <router-outlet></router-outlet>
