@@ -5,11 +5,11 @@
 <div class="col-md-7">
 <div *ngFor="let Quotes of quotes; let i = index" class="card">
   <div class="card-header bg-dark text-light">
-    Quote by {{Quotes.name}}
+    Quote from {{Quotes.name}}
   </div>
   <div class="card-body">
     <p class="card-text">
-    <app-quotes-details [quotes]='Quotes' *ngIf='Quotes.showQuoteSaid' ></app-quotes-details></p>  
+    <app-quotes-details [quotes]='Quotes' (isDelete)="deleteQuote($event,i)" *ngIf='Quotes.showQuoteSaid' ></app-quotes-details></p>  
     <button (click)="viewDetails(i)" class="btn btn-dark">{{buttonText?"View":"Hide"}}</button>
   </div>
   <div *ngIf='Quotes.showQuoteSaid'class="card-footer text-muted card-pipe">

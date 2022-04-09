@@ -17,6 +17,15 @@ export class QuotesComponent implements OnInit {
     this.quotes[index].showQuoteSaid = !this.quotes[index].showQuoteSaid;
     this.buttonText = !this.buttonText
   }
+  deleteQuote(isDelete:any, index:any){
+    if(isDelete){
+      let toDelete = confirm(`Delete quote from ${this.quotes[index].name}?`)
+    
+    if(toDelete){
+      this.quotes.splice(index,1)
+    }
+  }
+  }
   
   addNewQuote(quote:any){
     let quotesLength = this.quotes.length;
