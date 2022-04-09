@@ -6,17 +6,19 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+
   quotes:Quotes[]=[
-    new Quotes('Collins', 'Wangari Maathai','"Human rights are not things that are put on the table for people to enjoy. These are things you fight for and then you protect."'),
-    new Quotes('Sirwani', 'Steve Jobs','"Be a yardstick of quality. Some people aren’t used to an environment where excellence is expected."')
+    new Quotes(1,'Collins', 'Wangari Maathai','"Human rights are not things that are put on the table for people to enjoy. These are things you fight for and then you protect."'),
+    new Quotes(2,'Sirwani', 'Steve Jobs','"Be a yardstick of quality. Some people aren’t used to an environment where excellence is expected."')
     
   ];
-  // addNewQuote(Quotes){
-    // let goalLength = this.quotes.length;
-    // Quotes.id = goalLength+1;
+  
+  addNewQuote(quote:any){
+    let quotesLength = this.quotes.length;
+    quote.id = quotesLength+1;
     // this.quotes.completeDate = new Date(goal.completeDate)
-    // this.quotes.push(this.Quotes))
-  // }
+    this.quotes.push(quote)
+  }
   constructor() { }
 
   ngOnInit(): void {

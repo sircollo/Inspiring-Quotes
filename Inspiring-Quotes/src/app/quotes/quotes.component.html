@@ -1,17 +1,20 @@
-<!-- <app-quotes-form ></app-quotes-form> -->
-<section id="quotes">
+<div id="quotes"class="row">
+<div class="col-md-5">
+  <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>  
+</div>
+<div class="col-md-7">
 <div *ngFor="let Quotes of quotes" class="card">
   <div class="card-header bg-dark text-light">
     Posted by {{Quotes.name}}
   </div>
   <div class="card-body">
     <p class="card-text">
-    <app-quotes-details [quotes]='Quotes'></app-quotes-details></p>
-  
+    <app-quotes-details [quotes]='Quotes'></app-quotes-details></p>  
     <a href="#" class="btn btn-dark">View</a>
   </div>
   <div class="card-footer text-muted card-pipe">
     2 days ago
   </div>
 </div>
-</section>
+</div>
+</div>
