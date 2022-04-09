@@ -8,8 +8,8 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes:Quotes[]=[
-    new Quotes(1,'Collins', 'Wangari Maathai','"Human rights are not things that are put on the table for people to enjoy. These are things you fight for and then you protect."',new Date(2022,4,8)),
-    new Quotes(2,'Sirwani', 'Steve Jobs','"Be a yardstick of quality. Some people aren’t used to an environment where excellence is expected."', new Date(2022,3,21))
+    new Quotes(1,'Collins', 'Wangari Maathai','"Human rights are not things that are put on the table for people to enjoy. These are things you fight for and then you protect."',new Date(2022,4,8),0,0),
+    new Quotes(2,'Sirwani', 'Steve Jobs','"Be a yardstick of quality. Some people aren’t used to an environment where excellence is expected."', new Date(2022,3,21),0,0)
     
   ];
   buttonText:any = 'View';
@@ -32,6 +32,15 @@ export class QuotesComponent implements OnInit {
     quote.id = quotesLength+1;
     // this.quotes.completeDate = new Date(goal.completeDate)
     this.quotes.push(quote)
+  }
+  upVoteValue: number = 0;
+  downVoteValue: number = 0;
+  upVote(index: number){
+    this.upVoteValue++
+     
+  }
+  downVote(index: number){
+    this.downVoteValue--
   }
   constructor() { }
 

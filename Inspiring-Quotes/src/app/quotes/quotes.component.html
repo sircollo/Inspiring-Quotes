@@ -12,11 +12,23 @@
     <app-quotes-details [quotes]='Quotes' (isDelete)="deleteQuote($event,i)" *ngIf='Quotes.showQuoteSaid' ></app-quotes-details></p>  
     <button (click)="viewDetails(i)" class="btn btn-dark">{{buttonText?"View":"Hide"}}</button>
   </div>
-  <div *ngIf='Quotes.showQuoteSaid'class="card-footer text-muted card-pipe">
-    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-    <span>{{Quotes.datePosted| date}}</span>
+  <div *ngIf='Quotes.showQuoteSaid'class="container card-footer text-muted">
+    <div class="row">
+      <div class="col-md-8">
+        Vote
+        <i  class="fa fa-caret-up text-success fa-3x" (click)="upVote(i)" aria-hidden="false"></i>
+        <i class="fa fa-caret-down text-danger fa-3x" (click)="downVote(i)" aria-hidden="true"></i>
+        <strong><p>{{upVoteValue}}  {{downVoteValue}} </p></strong>
+      </div>
+      <div class="col-md-4">
+        <span>Created on {{Quotes.datePosted| date}}</span>
+      </div>
+
+    </div>
+    
   </div>
 </div>
 </div>
 </div>
+
+    
