@@ -3,16 +3,16 @@
   <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>  
 </div>
 <div class="col-md-7">
-<div *ngFor="let Quotes of quotes" class="card">
+<div *ngFor="let Quotes of quotes; let i = index" class="card">
   <div class="card-header bg-dark text-light">
-    Posted by {{Quotes.name}}
+    Quote by {{Quotes.name}}
   </div>
   <div class="card-body">
     <p class="card-text">
-    <app-quotes-details [quotes]='Quotes'></app-quotes-details></p>  
-    <a href="#" class="btn btn-dark">View</a>
+    <app-quotes-details [quotes]='Quotes' *ngIf='Quotes.showQuoteSaid' ></app-quotes-details></p>  
+    <button (click)="viewDetails(i)" class="btn btn-dark">{{buttonText?"View":"Hide"}}</button>
   </div>
-  <div class="card-footer text-muted card-pipe">
+  <div *ngIf='Quotes.showQuoteSaid'class="card-footer text-muted card-pipe">
     {{Quotes.datePosted}}
   </div>
 </div>

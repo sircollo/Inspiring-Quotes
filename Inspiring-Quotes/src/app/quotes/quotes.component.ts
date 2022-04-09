@@ -12,6 +12,11 @@ export class QuotesComponent implements OnInit {
     new Quotes(2,'Sirwani', 'Steve Jobs','"Be a yardstick of quality. Some people aren’t used to an environment where excellence is expected."', new Date(2022,3,21))
     
   ];
+  buttonText:any = 'View';
+  viewDetails(index:any){
+    this.quotes[index].showQuoteSaid = !this.quotes[index].showQuoteSaid;
+    this.buttonText = !this.buttonText
+  }
   
   addNewQuote(quote:any){
     let quotesLength = this.quotes.length;
