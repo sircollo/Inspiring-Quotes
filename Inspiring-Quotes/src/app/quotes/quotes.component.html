@@ -13,7 +13,7 @@
     <button (click)="viewDetails(i)" class="btn btn-dark">{{buttonText?"View":"Hide"}}</button>
   </div>
   <div *ngIf='Quotes.showQuoteSaid'class="card-footer text-muted card-pipe">
-    {{Quotes.datePosted}}
+    {{Quotes.datePosted| date}}
   </div>
 </div>
 </div>
