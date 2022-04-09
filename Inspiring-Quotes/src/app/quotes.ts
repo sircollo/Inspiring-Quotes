@@ -5,7 +5,8 @@ export class Quotes {
     public id?:number,
     public name?:string, 
     public author?:string, 
-    public quoteSaid?:string ){
+    public quoteSaid?:string,
+    public datePosted?:Date ){
 
   }
 }
