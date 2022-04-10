@@ -1,9 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'datePosted'
+  name: 'datePost'
 })
-export class DatePostedPipe implements PipeTransform {
+export class DatePostPipe implements PipeTransform {
 
   transform(value: any): number {
     let today:Date = new Date(); //get current date and time
@@ -16,7 +16,7 @@ export class DatePostedPipe implements PipeTransform {
     if (dateCounter >= 1 && value > todayWithNoTime){
       return dateCounter;
     }else{
-      return 0;
+      return (0);
     }
   }
 

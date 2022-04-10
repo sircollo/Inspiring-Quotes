@@ -11,7 +11,8 @@ import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import { QuotesDetailsComponent } from './quotes-details/quotes-details.component';
 import { FooterComponent } from './footer/footer.component';
 import { VoteComponent } from './vote/vote.component';
-import { HighlightDirective } from './highlight.directive'
+import { HighlightDirective } from './highlight.directive';
+import { DatePostPipe } from './date-post.pipe'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { HighlightDirective } from './highlight.directive'
     QuotesDetailsComponent,
     FooterComponent,
     VoteComponent,
-    HighlightDirective
+    HighlightDirective,
+    DatePostPipe
   ],
   imports: [
     BrowserModule,
