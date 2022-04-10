@@ -44,6 +44,6 @@ Preview Here: https://sircollo.github.io/Inspiring-Quotes/
 ## Support and Contact Details
 sircollo71@gmail.com
 ### License
-[MIT](https://github.com/sircollo/Inspiring-Quotes/blob/main/LICENSE)
+[MIT](https://github.com/sircollo/Inspiring-Quotes/blob/main/Inspiring-Quotes/LICENSE)
 
 Copyright (c) 2022 **Collins Sirwani**
