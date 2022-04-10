@@ -9,3 +9,6 @@ h6{
 .card-pipe{
   text-align: right;
 }
+.card:hover{
+  transform: scale(1,1.05);
+}
