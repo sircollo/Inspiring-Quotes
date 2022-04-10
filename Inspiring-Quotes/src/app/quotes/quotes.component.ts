@@ -33,15 +33,16 @@ export class QuotesComponent implements OnInit {
     // this.quotes.completeDate = new Date(goal.completeDate)
     this.quotes.push(quote)
   }
-  upVoteValue: number = 0;
-  downVoteValue: number = 0;
-  upVote(index: number){
-    this.upVoteValue++
+  // upVoteValue: number = 0;
+  // downVoteValue: number = 0;
+  // upVote(index: number){
+  //   this.upVoteValue++
      
-  }
-  downVote(index: number){
-    this.downVoteValue--
-  }
+  // }
+  // downVote(index: number){
+  //   this.downVoteValue--
+  // }
+  
   constructor() { }
 
   ngOnInit(): void {
