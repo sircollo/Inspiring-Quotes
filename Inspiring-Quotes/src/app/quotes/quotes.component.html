@@ -15,10 +15,7 @@
   <div *ngIf='Quotes.showQuoteSaid'class="container card-footer text-muted">
     <div class="row">
       <div class="col-md-8">
-        Vote
-        <i  class="fa fa-caret-up text-success fa-3x" (click)="upVote(i)" aria-hidden="false"></i>
-        <i class="fa fa-caret-down text-danger fa-3x" (click)="downVote(i)" aria-hidden="true"></i>
-        <strong><p>{{upVoteValue}}  {{downVoteValue}} </p></strong>
+        <app-vote></app-vote>
       </div>
       <div class="col-md-4">
         <span>Created on {{Quotes.datePosted| date}}</span>
