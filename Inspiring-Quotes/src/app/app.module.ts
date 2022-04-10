@@ -9,7 +9,8 @@ import { SliderComponent } from './slider/slider.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import { QuotesDetailsComponent } from './quotes-details/quotes-details.component';
-import { FooterComponent } from './footer/footer.component'
+import { FooterComponent } from './footer/footer.component';
+import { VoteComponent } from './vote/vote.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { FooterComponent } from './footer/footer.component'
     QuotesComponent,
     QuotesFormComponent,
     QuotesDetailsComponent,
-    FooterComponent
+    FooterComponent,
+    VoteComponent
   ],
   imports: [
     BrowserModule,
