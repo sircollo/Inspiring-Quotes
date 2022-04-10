@@ -10,7 +10,8 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import { QuotesDetailsComponent } from './quotes-details/quotes-details.component';
 import { FooterComponent } from './footer/footer.component';
-import { VoteComponent } from './vote/vote.component'
+import { VoteComponent } from './vote/vote.component';
+import { HighlightDirective } from './highlight.directive'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { VoteComponent } from './vote/vote.component'
     QuotesFormComponent,
     QuotesDetailsComponent,
     FooterComponent,
-    VoteComponent
+    VoteComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
