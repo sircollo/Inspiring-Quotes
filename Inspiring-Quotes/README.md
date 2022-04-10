@@ -1,27 +1,49 @@
-# InspiringQuotes
+# Inspiring Quotes
+#### Inspiring Quotes, Angular web application 20/03/2022
+## Author :  [Collins Sirwani ](https://github.com/sircollo/)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-## Development server
+## Table Of Contents
+* [Description](#description)
+* [Setup/Instalation Requirements](#setupinstallation-requirements)
+* [Known Bugs](#known-bugs)
+* [Technologies Used](#technologies-used)
+* [Live Link Preview](#live-link-preview)
+* [Support and Contact Details](#support-and-contact-details)
+* [License](#license)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Description
+This is a Quotes Web application where users can add quotes, delete quotes and vote for quotes.
+This is achieved using Angular cli, HTML, CSS and Bootstrap.
 
-## Code scaffolding
+## Setup/Installation Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Download a file in the code section to the desired folder
+- Extract the files
+- Open the folder with terminal and type ng-serve.
+- Open the link after it has finished compiling it successfully.
+- And you are all done
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Known Bugs
+None
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Technologies Used
+* Angular v13.3.0
+* CSS
+* HTML
+* Bootstrap 5
+* TypeScript
 
-## Further help
+## Live Link Preview
+Preview Here: https://sircollo.github.io/Inspiring-Quotes/
+## Support and Contact Details
+sircollo71@gmail.com
+### License
+[MIT](https://github.com/sircollo/Inspiring-Quotes/blob/main/LICENSE)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Copyright (c) 2022 **Collins Sirwani**
