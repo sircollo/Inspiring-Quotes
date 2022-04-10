@@ -11,7 +11,7 @@ export class QuotesComponent implements OnInit {
     new Quotes(1,'Collins', 'Wangari Maathai','"Human rights are not things that are put on the table for people to enjoy. These are things you fight for and then you protect."',new Date(2022,4,8),0,0),
     new Quotes(2,'Sirwani', 'Steve Jobs','"Be a yardstick of quality. Some people aren’t used to an environment where excellence is expected."', new Date(2022,3,21),0,0)
     
-  ];
+  ]
   buttonText:any = 'View';
   viewDetails(index:any){
     this.quotes[index].showQuoteSaid = !this.quotes[index].showQuoteSaid;

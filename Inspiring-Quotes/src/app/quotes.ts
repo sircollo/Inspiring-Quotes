@@ -11,7 +11,7 @@ export class Quotes {
     public upvotes?: number,
     public downvotes?: number ){
 
-      this.showQuoteSaid = false;
+      this.showQuoteSaid = true;
 
   }
 }
